@@ -1,6 +1,6 @@
 # practiceFile
-some practice files
+## some practice files
 
-## python files (.py)
+1. python files (.py)
 
-## jupyter files (.ipynb)
+2. jupyter files (.ipynb)

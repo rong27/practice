@@ -2,9 +2,7 @@ import subprocess
 import os
 import numpy as np
 import shutil
-
-os.chdir('C:\\test2dtracker')
-checkfolders = os.listdir(os.getcwd())
+checkfolders = os.listdir("C:\\tracker_auto_vm")
 # print(np.array(checkfolders))
 # print('The folder has ' + str(len(checkfolders)) + ' dirs')
 
@@ -16,7 +14,7 @@ checkfolders = os.listdir(os.getcwd())
 
 
 for i in checkfolders:
-    now_path = os.path.join('C:\\test2dtracker',i)
+    now_path = os.path.join('C:\\tracker_auto_vm',i)
     os.chdir(now_path)
     print(os.getcwd())
     open2dtrackerapp = subprocess.call('C:\\work\\projects\\trackerproc\\trackerproc_build\\x86\\app\\Release\\2dtrackerapp.exe')

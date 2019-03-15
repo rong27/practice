@@ -5,19 +5,19 @@ import shutil
 import numpy as np
 import re
 
-# def DeleteFiles(path, DirList, filelist):
-#     dirfile = []
-#     dirfile = os.listdir(path)
-#     for sth in dirfile:
-#         if sth not in DirList:
-#             filepath = os.path.join(path, sth)
-#             if os.path.isdir(filepath):
-#                 shutil.rmtree(filepath, True)
+def DeleteFiles(path, DirList, filelist):
+    dirfile = []
+    dirfile = os.listdir(path)
+    for sth in dirfile:
+        if sth not in DirList:
+            filepath = os.path.join(path, sth)
+            if os.path.isdir(filepath):
+                shutil.rmtree(filepath, True)
                 
-#             elif sth not in filelist:
-#                 filepath = os.path.join(path, sth)
-#                 if not os.path.isdir(filepath):
-#                     os.remove(sth)
+            elif sth not in filelist:
+                filepath = os.path.join(path, sth)
+                if not os.path.isdir(filepath):
+                    os.remove(sth)
 
 # for i in os.listdir('C:\\new_shortdata'):
 #     os.chdir('C:\\new_shortdata\\'+ i)
@@ -32,19 +32,21 @@ import re
 
 
 
-# for i in os.listdir('C:\\Kavalan_2dtrackerapp'):
-#     os.chdir('C:\\Kavalan_2dtrackerapp\\'+ i)
-#     path = os.getcwd()
-#     dirslist = ['cnn']
-#     filelist = []
-#     DeleteFiles(path, dirslist, filelist)
+for i in os.listdir('C:\\new_shortdata'):
+    os.chdir('C:\\new_shortdata\\'+ i)
+    path = os.getcwd()
+    print(path)
+    dirslist = ['cnn']
+    filelist = []
+    DeleteFiles(path, dirslist, filelist)
 
-# for i in os.listdir('C:\\Kavalan_2dtrackerapp'):
-#     os.chdir('C:\\Kavalan_2dtrackerapp\\'+ i + '\\cnn')
-#     path = os.getcwd()
-#     dirslist = ['HumanShort', 'HumanShortFg', 'MultiScaleHumanShort', 'MultiScaleHumanShortFg']
-#     filelist = []
-#     DeleteFiles(path, dirslist, filelist)
+for i in os.listdir('C:\\new_shortdata'):
+    os.chdir('C:\\new_shortdata\\'+ i + '\\cnn\\cnn_origin')
+    path = os.getcwd()
+    print(path)
+    dirslist = ['HumanShort', 'HumanShortFg', 'MultiScaleHumanShort', 'MultiScaleHumanShortFg']
+    filelist = []
+    DeleteFiles(path, dirslist, filelist)
 
 # for i in os.listdir('C:\\KavalanFGPng'):
 #     path = 'C:\\KavalanFGPng\\' + i 

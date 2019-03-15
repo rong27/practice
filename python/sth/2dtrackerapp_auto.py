@@ -1,7 +1,7 @@
 import subprocess
 import os
 import time
-os.chdir('D:\\joyvideo\\TrainingFolder\\autoremake')
+# os.chdir('D:\\joyvideo\\TrainingFolder\\autoremake')
 checkfolders = os.listdir('D:\\joyvideo\\TrainingFolder\\autoremake')
 # print(len(checkfolders))
 # print(checkfolders)

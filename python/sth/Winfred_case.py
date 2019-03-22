@@ -44,18 +44,24 @@ os.chdir('E:\\winfred_case\\0314remakefile\\')
 #     os.rename(remake_dir, replace_comma)   
 
 # 依照型號放設定檔
+# for dirname in os.listdir(remake_path):
+#     if "FD9187" in dirname:
+#         # print(dirname)
+#         if "video" not in os.listdir(remake_path+dirname):
+#             # print(dirname)
+#             os.chdir(remake_path+dirname)
+#             os.mkdir("video")
+#         for i in os.listdir(FD9187settings):
+#             print(i)
+#             shutil.copy2(FD9187settings+ i, dirname)
 
-for dirname in os.listdir(remake_path):
-    if "FD9187" in dirname:
-        # print(dirname)
-        if "video" not in os.listdir(remake_path+dirname):
-            # print(dirname)
-            os.chdir(remake_path+dirname)
-            os.mkdir("video")
-        for i in os.listdir(FD9187settings):
-            print(i)
-            shutil.copy2(FD9187settings+ i, dirname)
-
-
- 
-
+# for dirname65 in os.listdir(remake_path):
+#     if "IB9365" in dirname65:
+#         print(dirname65)
+#         if "video" not in os.listdir(remake_path+dirname65):
+#             print(dirname65)
+#             os.chdir(remake_path+dirname65)
+#             os.mkdir("video")
+#         for i in os.listdir(IB9365settings):
+#             print(i)
+#             shutil.copy2(IB9365settings+ i, dirname65)
